@@ -51,10 +51,10 @@ h1 {
 }
 
 button {
-    padding: 0.8rem 1.5rem;
+    padding: 0.6rem 1rem;
     border: none;
     border-radius: 0.5rem;
-    font-size: 1rem;
+    font-size: 0.9rem;
     cursor: pointer;
     transition: background-color 0.3s;
 }
@@ -76,8 +76,9 @@ button {
 
 .mode-selector {
     display: flex;
-    gap: 1rem;
+    gap: 0.5rem;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .mode-toggle {
@@ -104,4 +105,15 @@ button {
 
 button:hover {
     opacity: 0.9;
+}
+
+@media (min-width: 768px) {
+    .mode-selector {
+        gap: 1rem;
+    }
+    
+    button {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+    }
 } 
